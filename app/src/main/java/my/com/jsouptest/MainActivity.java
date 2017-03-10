@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                         String href = el.attr("href");
                         Document doc_det = Jsoup.connect("http://www.qiushibaike.com/" + href).get();
                         Elements els_det = doc_det.select(".content");
+                        String a;
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
